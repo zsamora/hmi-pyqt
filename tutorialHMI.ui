@@ -32,8 +32,11 @@
     <property name="mouseTracking">
      <bool>true</bool>
     </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
     <property name="maximum">
-     <number>100</number>
+     <number>9</number>
     </property>
     <property name="invertedAppearance">
      <bool>false</bool>
@@ -48,6 +51,9 @@
       <height>61</height>
      </rect>
     </property>
+    <property name="intValue" stdset="0">
+     <number>1</number>
+    </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
@@ -60,11 +66,11 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Secuencia LED apagada</string>
+     <string>Secuencia LED: OFF</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -94,11 +100,11 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Velocidad de secuencia LED</string>
+     <string>Velocidad de secuencia:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

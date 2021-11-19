@@ -27,18 +27,19 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def change_led_state(self):
         # Led estaba encendido
         if self.led_state:
-            send_command("2")
-            self.label_2.setText("Secuencia LED apagada")
+            send_command("X")
+            self.label_2.setText("Secuencia LED: OFF")
             self.pushButton.setText("ON")
         # Led estaba apagado
         else:
-            send_command("1")
-            self.label_2.setText("Secuencia LED encendida")
+            send_command("O")
+            self.label_2.setText("Secuencia LED: ON")
             self.pushButton.setText("OFF")
         self.led_state = not self.led_state
 
     def slider_moved(self):
         self.lcdNumber.display(self.dial.value())
+        send_command(str(self.dial.value()))
 
 
 if __name__ == "__main__":
