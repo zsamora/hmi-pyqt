@@ -5,7 +5,7 @@ This project connects an Arduino device with a simple HC-05 Bluetooth module con
 This UI uses PyQT to create a Human-Machine-Interface (HMI) to control this Arduino device
 ## Requirements
 - Arduino Uno
-- Any computer that runs Python3x
+- Any computer running Python 3
 ## Installation
 - pip3 install pyqt5
 ## Files
